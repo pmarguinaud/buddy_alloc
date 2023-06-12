@@ -11,6 +11,18 @@ set(SOURCE_FILES tests.c)
 # Add executable target with source files listed in SOURCE_FILES variable
 add_executable(buddy_tests ${SOURCE_FILES})
 
+
+# Compile C test1
+project(buddy_test1)
+set(C_STANDARD C99)
+
+# Add test1.c
+set(SOURCE_FILES test1.c)
+
+# Add executable target with source files listed in SOURCE_FILES variable
+add_executable(buddy_test1 ${SOURCE_FILES})
+
+
 # Compile CPP translation unit
 project(buddy_cpp_translation_unit)
 
